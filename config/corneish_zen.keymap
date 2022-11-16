@@ -19,14 +19,6 @@
     tapping-term-ms = <110>;
 };
 
-&lt_hp {
-    tapping-term-ms = <110>;
-};
-
-&mt_hp {
-    tapping-term-ms = <110>;
-};
-
 / {
   chosen {
     zmk,matrix_transform = &default_transform;
