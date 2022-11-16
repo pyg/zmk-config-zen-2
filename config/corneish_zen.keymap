@@ -5,6 +5,12 @@
 #define DVOR 0
 #define NAV 1
 
+&lt {
+    tapping-term-ms = <110>;
+    flavor = "hold-preferred";
+
+};
+
 / {
   chosen {
     zmk,matrix_transform = &default_transform;
@@ -19,7 +25,7 @@
                 default_layer {
                         label = "QWERTY";
                         bindings = <
-   &kp TAB      &kp SQT     &kp COMMA   &lt_hp NAV DOT &kp P   &kp Y   &kp F   &kp G  &kp C     &kp R   &kp L    &kp BSLH
+   &kp TAB      &kp SQT     &kp COMMA   &lt NAV DOT &kp P   &kp Y   &kp F   &kp G  &kp C     &kp R   &kp L    &kp BSLH
    &kp LCTRL    &kp A       &kp O       &kp E   &kp U   &kp I   &kp D   &kp H  &kp T     &kp N   &kp S &kp ENTER
    &kp ESC      &kp LSHIFT  &kp Q       &kp J   &kp K   &kp X   &kp B   &kp M  &kp W &kp V &kp Z &kp RSHIFT 
                 &kp LGUI    &mo LALT   &kp SPACE       &kp EQUAL       &mo BSPC    &kp DEL
