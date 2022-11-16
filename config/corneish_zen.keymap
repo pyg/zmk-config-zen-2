@@ -47,7 +47,7 @@
                         bindings = <
    &trans &trans &trans &trans &kp LS(P) &kp LS(Y) &kp LS(F) &kp LS(G) &kp LS(C) &kp LS(R) &kp LS(L) &trans 
    &trans &kp LS(A) &kp LS(O) &kp LS(E) &kp LS(U) &kp LS(I) &kp LS(D) &kp LS(H) &kp LS(T) &kp LS(N) &kp LS(S)  &trans 
-   &trans &mt_hp LSHIFT EXCL &kp LS(Q) kp LS(J) &kp LS(K) &kp LS(X) &kp LS(B) &kp LS(M) &kp LS(W) &kp LS(V) &mt_hp RSHIFT LS(Z) &trans 
+   &trans &mt LSHIFT EXCL &kp LS(Q) kp LS(J) &kp LS(K) &kp LS(X) &kp LS(B) &kp LS(M) &kp LS(W) &kp LS(V) &mt RSHIFT LS(Z) &trans 
    &trans &trans &trans &trans &trans &trans &trans 
                         >;
                 };
