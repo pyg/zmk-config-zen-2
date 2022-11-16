@@ -92,7 +92,7 @@
                         bindings = <
    &trans   &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME    &kp UP      &kp END     &kp PG_UP   &trans
    &trans   &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN   &trans
-   &kb BTCLR   &kb BT1  &kb BT2  &kb BT3  &kb BT4  &kb BT5  &trans  &kp K_MUTE      &kp K_VOL_UP      &kp K_VOL_DN      &kp LS(Z)      &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans  &kp K_MUTE      &kp K_VOL_UP      &kp K_VOL_DN      &kp LS(Z)      &trans
    &trans   &trans  &trans  &trans  &trans  &trans
                         >;
                 };
