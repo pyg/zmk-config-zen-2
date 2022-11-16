@@ -34,7 +34,7 @@
                 symbo_layer {
                         label = "SYMBO";
                         bindings = <
-   &trans   &kp LT      &kp LBKT    &kp RBKT    &kp RT      &trans  &trans  &trans  &trans      &trans      &trans      &trans
+   &trans   &kp LT      &kp LBKT    &kp RBKT    &kp GT      &trans  &trans  &trans  &trans      &trans      &trans      &trans
    &trans   &kp LBRC    &kp LPAR    &kp RPAR    &kp RBRC    &trans  &trans  &trans  &kp SEMI    &kp COLON   &kp DQT     &trans 
    &trans   &kp EXCL    &kp AT      &kp POUND   &kp DLLR    &trans  &trans  &trans  &trans      &kp QMARK   &trans      &trans
    &trans   &trans      &trans      &kp ENTER   &trans      &trans
