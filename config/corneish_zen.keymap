@@ -36,10 +36,10 @@
                 default_layer {
                         label = "QWERTY";
                         bindings = <
-   &kp TAB      &lt LEF SQT     &lt NUM COMMA   &lt NAV DOT &kp P   &kp Y   &kp F   &kp G  &kp C     &kp R   &kp L    &kp BSLH
-   &kp LCTRL    &kp A       &kp O       &kp E   &kp U   &kp I   &kp D   &kp H  &kp T     &kp N   &kp S &kp ENTER
-   &kp ESC      &kp LSHIFT  &kp Q       &kp J   &kp K   &kp X   &kp B   &kp M  &kp W &kp V &lt SYMBO Z &lt MEDI SLASH 
-                &kp LGUI    &kp LALT   &kp SPACE       &kp EQUAL       &kp BSPC    &kp DEL
+   &kp TAB         &lt LEF SQT     &lt NUM COMMA   &lt NAV DOT &kp P   &kp Y   &kp F   &kp G  &kp C     &kp R   &kp L    &kp BSLH
+   &kp LCTRL       &kp A       &kp O       &kp E   &kp U   &kp I   &kp D   &kp H  &kp T     &kp N   &kp S &kp ENTER
+   &mt LSHIFT ESC      &sk LSHIFT  &kp Q       &kp J   &kp K   &kp X   &kp B   &kp M  &kp W &kp V &lt SYMBO Z &lt MEDI SLASH 
+                &kp LALT    &kp LGUI   &kp SPACE       &kp EQUAL       &kp BSPC    &kp DEL
                         >;
                 };
                 shi_layer {
@@ -54,7 +54,7 @@
                 left_layer {
                         label = "LEF";
                         bindings = <
-   &trans   &kp DQT   &kp GRAVE  &kp UNDER   &kp TILDE   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+   &trans   &trans      &kp DQT  &kp GRAVE  &kp UNDER   &kp TILDE   &trans  &trans  &trans  &trans  &trans  &trans
    &trans   &trans      &trans  &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans
    &trans   &trans      &trans  &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans
    &trans   &trans      &trans  &trans      &trans      &trans
@@ -63,7 +63,7 @@
                 num_layer {
                         label = "NUM";
                         bindings = <
-   &trans   &kp GRAVE   &trans  &trans      &kp MINUS   &kp STAR    &kp DOLLAR  &kp N7  &kp N8  &kp N9   &kp N6  &trans
+   &trans   &kp DQT   &trans  &trans      &kp MINUS   &kp STAR    &kp DOLLAR  &kp N7  &kp N8  &kp N9   &kp N6  &trans
    &trans   &trans      &trans  &trans      &kp SLASH   &kp CARET   &kp PERCENT &kp N2  &kp N3  &kp N4   &kp N5  &trans
    &trans   &trans      &trans  &trans      &trans      &trans      &kp AMPS    &kp N1  &kp N0  &kp PLUS &trans  &trans
    &trans   &trans      &trans  &trans      &trans      &trans
@@ -81,18 +81,18 @@
                 symbol_layer {
                         label = "SYMBO";
                         bindings = <
-   &trans &kp LT   &kp LBKT  &kp RBKT  &kp GT  &trans  &trans  &trans    &trans     &trans      &trans  &trans
-   &trans &kp LBRC   &kp LPAR  &kp RPAR  &kp RBRC  &trans  &trans  &kp SEMI    &kp COLON    &kp DQT     &trans  &trans
-   &trans   &lt SHI EXCL  &kp AT  &kp POUND  &kp DLLR  &trans  &trans  &trans      &trans      &kp QMARK   &trans  &trans
-   &trans   &trans  &trans  &kp ENTER  &trans  &trans
+   &trans   &kp LT          &kp LBKT  &kp RBKT   &kp GT    &trans  &trans  &trans      &trans     &trans      &trans  &trans
+   &trans   &kp LBRC        &kp LPAR  &kp RPAR   &kp RBRC  &trans  &trans  &kp SEMI    &kp COLON    &kp DQT     &trans  &trans
+   &trans   &lt SHI EXCL    &kp AT    &kp POUND  &kp DLLR  &trans  &trans  &kp LBKT      &kp RBKT      &kp QMARK   &trans  &trans
+   &trans   &trans          &trans    &kp ENTER  &trans    &trans
                         >;
                 };
                 media_layer {
                         label = "MEDI";
                         bindings = <
-   &trans   &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME    &kp UP      &kp END     &kp PG_UP   &trans
-   &trans   &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN   &trans
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans  &kp K_MUTE      &kp K_VOL_UP      &kp K_VOL_DN      &kp LS(Z)      &trans
+   &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans     &trans   &trans
+   &trans   &kp LS(A)  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans   &kp C_BASS_BOOST   &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans  &kp C_MUTE      &kp C_VOL_UP      &kp K_VOL_DN2      &kp LS(Z)      &trans
    &trans   &trans  &trans  &trans  &trans  &trans
                         >;
                 };
