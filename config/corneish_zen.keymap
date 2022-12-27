@@ -22,15 +22,25 @@
 
 / {
         behaviors {
-            lt_bl: layer_tap_balanced {
+            mt_bl: mod_tap_balanced {
                 compatible = "zmk,behavior-hold-tap";
                 label = "BALANCED_MODS";
+                #binding-cells = <2>;
                 tapping-term-ms = <150>;
                 flavor = "balanced";
-                bindings = <&mo>, <&kp>;
+                bindings = <&kp>, <&kp>;
+                retro-tap;
             };
             
-
+            lt_tp: layer_tap_tap_preferred {
+                compatible = "zmk,behavior-hold-tap";
+                label = "TAP_PREFERRED_MODS";
+                #binding-cells = <2>;
+                tapping-term-ms = <150>;
+                flavor = "tap-preferred";
+                bindings = <&mo>, <&kp>;
+                retro-tap;
+            };
         };
         keymap {
 
@@ -41,9 +51,9 @@
                     label = "DVORAK";
                     bindings = <
            &kp TAB  &lt 1 SQT  &lt 2 COMMA  &lt 3 DOT     &kp P            &kp Y              &kp F     &kp G    &kp C   &kp R    &kp L   &kp BSLH
-         &kp LCTRL      &kp A        &kp O      &kp E     &kp U            &kp I              &kp D     &kp H    &kp T   &kp N   &lt_bl 4 S  &kp SLASH
+         &kp LCTRL      &kp A        &kp O      &kp E     &kp U            &kp I              &kp D     &kp H    &kp T   &kp N   &lt_tp 4 S  &kp SLASH
            &kp ESC  &kp LSHFT        &kp Q      &kp J     &kp K            &kp X              &kp B     &kp M    &kp W   &kp V    &kp Z      &mo 5
-                                             &kp LALT  &kp LGUI  &mt RSHFT SPACE          &kp EQUAL  &kp BSPC  &kp DEL
+                                             &kp LALT  &kp LGUI  &mt_bl RSHFT SPACE          &kp EQUAL  &kp BSPC  &kp DEL
                     >;
                 };
 
