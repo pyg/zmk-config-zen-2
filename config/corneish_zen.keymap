@@ -47,7 +47,7 @@
                 compatible = "zmk,behavior-tap-dance";
                 label = "TAP_DANCE_0";
                 #binding-cells = <0>;
-                tapping-term-ms = <150>;
+                tapping-term-ms = <250>;
                 bindings = <&kp N1>, <&kp N2>, <&kp N3>, <&kp N4>, <&kp N5>, <&kp N6>, <&kp N7>, <&kp N8>, <&kp N9>;
             };
         };
@@ -60,8 +60,8 @@
                     label = "DVORAK";
                     bindings = <
            &kp TAB  &lt 1 SQT  &lt 2 COMMA  &lt 3 DOT     &kp P            &kp Y              &kp F     &kp G    &kp C   &kp R    &kp L   &kp BSLH
-         &kp LCTRL      &kp A        &kp O      &kp E     &kp U            &kp I              &kp D     &kp H    &kp T   &kp N   &lt_tp 4 S  &kp SLASH
-           &kp ESC  &kp LSHFT        &kp Q      &kp J     &kp K            &kp X              &kp B     &kp M    &kp W   &kp V    &kp Z      &mo 5
+         &kp LCTRL      &kp A        &kp O      &kp E     &kp U            &kp I              &kp D     &kp H    &kp T   &kp N   &lt_tp 4 S  &kp ENTER
+           &kp ESC  &kp LSHFT        &kp Q      &kp J     &kp K            &kp X              &kp B     &kp M    &kp W   &kp V    &kp Z      &lt 5 SLASH
                                              &kp LALT  &kp LGUI  &mt_bl RSHFT SPACE          &kp EQUAL  &kp BSPC  &kp DEL
                     >;
                 };
@@ -82,7 +82,7 @@
          &trans  &kp DQT  &trans  &trans  &kp MINUS   &kp STAR           &kp DOLLAR  &kp N7  &kp N8    &kp N9    &kp N6  &trans
          &trans   &kp AT  &trans  &trans  &kp SLASH  &kp CARET          &kp PERCENT  &kp N2  &kp N3    &kp N4  &lt 4 N5  &trans
          &trans   &trans  &trans  &trans     &trans     &trans             &kp AMPS  &kp N1  &kp N0  &kp PLUS    &trans  &trans
-                                  &trans     &trans     &trans               &trans  &trans  &trans
+                                  &trans     &trans     &trans               &kp PLUS  &trans  &trans
                     >;
                 };
 
@@ -111,7 +111,7 @@
                     bindings = <
              &trans        &trans        &trans        &trans        &trans        &trans          &trans      &trans        &trans        &trans  &trans  &trans
              &trans        &trans        &trans        &trans        &trans        &trans          &trans      &trans        &trans        &trans  &trans  &trans
-         &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &kp K_MUTE  &kp C_VOL_UP  &kp C_VOL_DN  &trans  &trans
+         &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &kp C_MUTE  &kp C_VOL_UP  &kp C_VOL_DN  &trans  &trans
                                                        &trans        &trans        &trans          &trans      &trans        &trans
                     >;
                 };
