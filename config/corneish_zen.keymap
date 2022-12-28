@@ -38,7 +38,7 @@
                 label = "TAP_PREFERRED_MODS";
                 #binding-cells = <2>;
                 tapping-term-ms = <150>;
-                flavor = "tap-preferred";
+                flavor = "hold-preferred";
                 bindings = <&mo>, <&kp>;
                 retro-tap;
             };
@@ -49,6 +49,14 @@
                 #binding-cells = <0>;
                 tapping-term-ms = <250>;
                 bindings = <&kp N1>, <&kp N2>, <&kp N3>, <&kp N4>, <&kp N5>, <&kp N6>, <&kp N7>, <&kp N8>, <&kp N9>;
+            };
+        };
+        combos {
+            compatible = "zmk,combos";
+            combo_esc {
+                timeout-ms = <50>;
+                key-positions = <33 34>;
+                bindings = <&kp QUESTION>;
             };
         };
         keymap {
@@ -99,10 +107,10 @@
                 symbol {
                     label = "SYMBOLS";
                     bindings = <
-         &trans  &lt 1 LT  &lt 2 LEFT_BRACKET   &kp RBKT    &kp GT      &kp CARET            &trans    &kp DOLLAR   &kp PERCENT   &trans  &trans  &trans
+         &trans  &lt 7 LT  &lt 8 LEFT_BRACKET   &kp RBKT    &kp GT      &kp CARET            &trans    &kp DOLLAR   &kp PERCENT   &trans  &trans  &trans
          &trans  &kp LBRC            &kp LPAR   &kp RPAR  &kp RBRC   &kp ASTERISK            &trans      &kp SEMI     &kp COLON  &kp DQT  &trans  &trans
          &trans  &kp EXCL              &kp AT  &kp POUND  &kp DLLR  &kp AMPERSAND            &trans  &td0  &kp NUMBER_0   &trans  &trans  &trans
-                                                  &trans    &trans         &trans          &kp PLUS     &kp ENTER        &trans
+                                                  &trans    &trans         &trans          &kp PLUS     &trans &kp ENTER
                     >;
                 };
 
@@ -123,6 +131,24 @@
          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &mwh SCROLL_DOWN  &trans
          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                  &trans  &trans  &trans          &mkp RCLK  &mkp LCLK  &mkp MCLK
+                    >;
+                };
+                left2 {
+                    label = "LEFT2";
+                    bindings = <
+         &trans  &trans  &kp DQT  &kp GRAVE  &kp UNDER  &kp TILDE          &trans  &trans  &trans  &trans  &trans  &trans
+         &trans  &trans   &trans     &trans     &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+         &trans  &trans   &trans     &trans     &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                     &trans     &trans     &trans          &trans  &trans  &trans
+                    >;
+                };
+                number2 {
+                    label = "NUMBERS2";
+                    bindings = <
+         &trans  &kp DQT  &trans  &trans  &kp MINUS   &kp STAR           &kp DOLLAR  &kp N7  &kp N8    &kp N9    &kp N6  &trans
+         &trans   &kp AT  &trans  &trans  &kp SLASH  &kp CARET          &kp PERCENT  &kp N2  &kp N3    &kp N4  &lt 4 N5  &trans
+         &trans   &trans  &trans  &trans     &trans     &trans             &kp AMPS  &kp N1  &kp N0  &kp PLUS    &trans  &trans
+                                  &trans     &trans     &trans               &kp PLUS  &trans  &trans
                     >;
                 };
         };
