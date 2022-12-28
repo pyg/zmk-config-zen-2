@@ -38,7 +38,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 label = "BALANCED_MODS";
                 #binding-cells = <2>;
-                tapping-term-ms = <150>;
+                tapping-term-ms = <100>;
                 flavor = "balanced";
                 bindings = <&kp>, <&kp>;
                 retro-tap;
@@ -81,7 +81,7 @@
            &kp TAB  &lt 1 SQT  &lt 2 COMMA  &lt 3 DOT     &kp P            &kp Y              &kp F     &kp G    &kp C   &kp R    &kp L   &kp BSLH
          &kp LCTRL      &kp A        &kp O      &kp E     &kp U            &kp I              &kp D     &kp H    &kp T   &kp N   &lt_tp 4 S  &kp ENTER
            &kp ESC  &kp LSHFT        &kp Q      &kp J     &kp K            &kp X              &kp B     &kp M    &kp W   &kp V    &kp Z      &lt 5 SLASH
-                                             &kp LALT  &kp LGUI  &mt_bl RSHFT SPACE          &kp EQUAL  &kp ENTER  &kp BSPC                   
+                                             &kp LALT  &kp LGUI  &mt_bl RSHFT SPACE          &kp EQUAL  &kp BSPC  &kp DEL                   
                     >;
                 };
 
@@ -101,7 +101,7 @@
          &trans  &kp DQT  &trans  &trans  &kp MINUS   &kp STAR           &kp DOLLAR  &kp N7  &kp N8    &kp N9    &kp N6  &trans
          &trans   &kp AT  &trans  &trans  &kp SLASH  &kp CARET          &kp PERCENT  &kp N2  &kp N3    &kp N4  &lt 4 N5  &trans
          &trans   &trans  &trans  &trans     &trans     &trans             &kp AMPS  &kp N1  &kp N0  &kp PLUS    &trans  &trans
-                                  &trans     &trans     &trans               &kp PLUS  &trans  &trans
+                                  &trans     &trans     &trans               &trans  &trans  &trans
                     >;
                 };
 
@@ -109,8 +109,8 @@
                     label = "NAV";
                     bindings = <
          &trans  &trans  &trans  &trans      &mo 6  &trans          &kp PRINTSCREEN  &kp HOME    &kp UP  &kp PG_UP    &kp END  &trans
-         &trans  &trans  &trans  &trans  &kp SLASH  &trans               &kp DEL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
-         &trans  &trans  &trans  &trans     &trans  &trans          &kp PAUSE_BREAK    &kp INS    &trans     &trans     &trans  &trans
+         &trans  &trans  &trans  &trans  &kp SLASH  &trans               &kp INS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
+         &trans  &trans  &trans  &trans     &trans  &trans          &kp PAUSE_BREAK    &trans    &trans     &trans     &trans  &trans
                                  &trans     &trans  &trans                   &trans    &trans    &trans
                     >;
                 };
@@ -121,7 +121,7 @@
          &trans  &lt 7 LT  &lt 8 LEFT_BRACKET   &kp RBKT    &kp GT      &kp CARET            &trans    &kp DOLLAR   &kp PERCENT   &trans  &trans  &trans
          &trans  &kp LBRC            &kp LPAR   &kp RPAR  &kp RBRC   &kp ASTERISK            &trans      &kp SEMI     &kp COLON  &kp DQT  &trans  &trans
          &trans  &kp EXCL              &kp AT  &kp POUND  &kp DLLR  &kp AMPERSAND            &trans  &td0  &kp NUMBER_0   &trans  &trans  &trans
-                                                  &trans    &trans         &trans          &kp PLUS     &trans &trans
+                                                  &trans    &trans         &trans          &kp ENTER    &trans &kp PLUS
                     >;
                 };
 
@@ -138,8 +138,8 @@
                 mouse {
                     label = "MOUSE";
                     bindings = <
-         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &mmv MOVE_VERT(-1500) &mwh SCROLL_VERT(20)  &trans  &trans
-         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &mmv MOVE_HOR(-1500)  &mmv MOVE_VERT(1500)   &mmv MOVE_HOR(1500)  &mwh SCROLL_VERT(-20)  &trans
+         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &mmv MOVE_VERT(-2000) &mwh SCROLL_VERT(20)  &trans  &trans
+         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &mmv MOVE_HOR(-2000)  &mmv MOVE_VERT(2000)   &mmv MOVE_HOR(2000)  &mwh SCROLL_VERT(-20)  &trans
          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                  &trans  &trans  &trans          &mkp RCLK  &mkp LCLK  &mkp MCLK
                     >;
@@ -159,7 +159,7 @@
          &trans  &kp DQT  &trans  &trans  &kp MINUS   &kp STAR           &kp DOLLAR  &kp N7  &kp N8    &kp N9    &kp N6  &trans
          &trans   &kp AT  &trans  &trans  &kp SLASH  &kp CARET          &kp PERCENT  &kp N2  &kp N3    &kp N4  &lt 4 N5  &trans
          &trans   &trans  &trans  &trans     &trans     &trans             &kp AMPS  &kp N1  &kp N0  &kp PLUS    &trans  &trans
-                                  &trans     &trans     &trans               &kp PLUS  &trans  &trans
+                                  &trans     &trans     &trans               &trans  &trans  &trans
                     >;
                 };
         };
