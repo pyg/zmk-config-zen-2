@@ -15,12 +15,12 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <50>;
+    time-to-max-speed-ms = <120>;
     acceleration-exponent=<1>;
 };
 
 &mwh {
-    time-to-max-speed-ms = <50>;
+    time-to-max-speed-ms = <120>;
     acceleration-exponent=<1>;
 };
 
@@ -49,7 +49,7 @@
                 label = "TAP_PREFERRED_MODS";
                 #binding-cells = <2>;
                 tapping-term-ms = <150>;
-                flavor = "hold-preferred";
+                flavor = "tap-preferred";
                 bindings = <&mo>, <&kp>;
                 retro-tap;
             };
@@ -81,8 +81,7 @@
            &kp TAB  &lt 1 SQT  &lt 2 COMMA  &lt 3 DOT     &kp P            &kp Y              &kp F     &kp G    &kp C   &kp R    &kp L   &kp BSLH
          &kp LCTRL      &kp A        &kp O      &kp E     &kp U            &kp I              &kp D     &kp H    &kp T   &kp N   &lt_tp 4 S  &kp ENTER
            &kp ESC  &kp LSHFT        &kp Q      &kp J     &kp K            &kp X              &kp B     &kp M    &kp W   &kp V    &kp Z      &lt 5 SLASH
-                                             &kp LALT  &kp LGUI  &mt_bl RSHFT SPACE          &kp EQUAL  &kp BSPC  &kp DEL
-                    >;
+                                             &kp LALT  &kp LGUI  &mt_bl RSHFT SPACE          &kp EQUAL  &kp ENTER  &kp BKSPC                   >;
                 };
 
                 left {
@@ -109,8 +108,8 @@
                     label = "NAV";
                     bindings = <
          &trans  &trans  &trans  &trans      &mo 6  &trans          &kp PRINTSCREEN  &kp HOME    &kp UP  &kp PG_UP    &kp END  &trans
-         &trans  &trans  &trans  &trans  &kp SLASH  &trans               &kp INSERT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
-         &trans  &trans  &trans  &trans     &trans  &trans          &kp PAUSE_BREAK    &trans    &trans     &trans     &trans  &trans
+         &trans  &trans  &trans  &trans  &kp SLASH  &trans               &kp DEL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
+         &trans  &trans  &trans  &trans     &trans  &trans          &kp PAUSE_BREAK    &kp INS    &trans     &trans     &trans  &trans
                                  &trans     &trans  &trans                   &trans    &trans    &trans
                     >;
                 };
@@ -121,7 +120,7 @@
          &trans  &lt 7 LT  &lt 8 LEFT_BRACKET   &kp RBKT    &kp GT      &kp CARET            &trans    &kp DOLLAR   &kp PERCENT   &trans  &trans  &trans
          &trans  &kp LBRC            &kp LPAR   &kp RPAR  &kp RBRC   &kp ASTERISK            &trans      &kp SEMI     &kp COLON  &kp DQT  &trans  &trans
          &trans  &kp EXCL              &kp AT  &kp POUND  &kp DLLR  &kp AMPERSAND            &trans  &td0  &kp NUMBER_0   &trans  &trans  &trans
-                                                  &trans    &trans         &trans          &kp PLUS     &trans &kp ENTER
+                                                  &trans    &trans         &trans          &kp PLUS     &trans &trans
                     >;
                 };
 
@@ -138,8 +137,8 @@
                 mouse {
                     label = "MOUSE";
                     bindings = <
-         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &mmv MOVE_UP  &mwh SCROLL_UP  &trans  &trans
-         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &mwh SCROLL_DOWN  &trans
+         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &mmv MOVE_VERT(-1500) &mwh SCROLL_VERT(20)  &trans  &trans
+         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &mmv MOVE_HOR(-1500)  &mmv MOVE_VERT(1500)   &mmv MOVE_HOR(1500)  &mwh SCROLL_VERT(-20)  &trans
          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                  &trans  &trans  &trans          &mkp RCLK  &mkp LCLK  &mkp MCLK
                     >;
