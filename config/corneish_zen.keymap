@@ -119,10 +119,10 @@
                 mouse {
                     label = "MOUSE";
                     bindings = <
+         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &mmv MOVE_UP  &mwh SCROLL_UP  &trans  &trans
+         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &mwh SCROLL_DOWN  &trans
          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans  &trans  &trans          &trans  &mkp LCLK  &trans
+                                 &trans  &trans  &trans          &mkp RCLK  &mkp LCLK  &mkp MCLK
                     >;
                 };
         };
