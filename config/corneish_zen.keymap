@@ -13,7 +13,18 @@
     tapping-term-ms = <110>;
     flavor = "hold-preferred";
 };
-            
+
+&mmv {
+    time-to-max-speed-ms = <50>;
+    acceleration-exponent=<1>;
+};
+
+&mwh {
+    time-to-max-speed-ms = <50>;
+    acceleration-exponent=<1>;
+};
+
+
 / {
   chosen {
     zmk,matrix_transform = &default_transform;
