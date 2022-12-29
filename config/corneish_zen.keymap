@@ -124,10 +124,10 @@
                 symbol {
                     label = "SYMBOLS";
                     bindings = <
-         &trans  &lt 4 LT  &lt 5 LEFT_BRACKET   &kp RBKT    &kp GT      &kp CARET            &trans    &kp DOLLAR   &kp PERCENT   &kp QUESTION  &trans  &trans
+         &trans  &lt 4 LT  &lt 5 LEFT_BRACKET   &kp RBKT    &kp GT      &kp CARET            &trans    &kp PLUS   &kp PERCENT   &kp QUESTION  &trans  &trans
          &trans  &kp LBRC            &kp LPAR   &kp RPAR  &kp RBRC   &kp AMPERSAND            &trans      &kp SEMI     &kp COLON  &kp DQT  &trans  &trans
          &trans  &kp EXCL              &kp AT  &kp POUND  &kp DLLR  &kp ASTERISK            &trans  &td0  &kp NUMBER_0   &trans  &trans  &trans
-                                                  &trans    &trans         &trans          &kp PLUS    &trans &trans
+                                                  &trans    &trans         &trans          &kp ENTER    &trans &trans
                     >;
                 };
 
