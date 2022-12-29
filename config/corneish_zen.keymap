@@ -168,9 +168,9 @@
                 lctrlqwerty {
                     label = "LCTRL";
                     bindings = <
-         &trans  &trans   &trans     &kp LC(R)     &kp LC(t)     &kp LC(y)          &trans  &trans  &trans  &trans  &trans  &trans
-         &trans  &trans   &trans     &trans     &kp LC(f)     &trans          &trans  &trans  &trans  &trans  &trans  &trans
-         &trans  &kp LC(z)   &kp LC(x)     &kp LC(c)     &kp LC(v)     &kp LC(b)          &trans  &trans  &trans  &trans  &trans  &trans
+         &trans  &trans   &trans     &kp LC(R)     &kp LC(T)     &kp LC(Y)          &trans  &trans  &trans  &trans  &trans  &trans
+         &trans  &trans   &trans     &trans     &kp LC(F)     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+         &trans  &kp LC(Z)   &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(B)          &trans  &trans  &trans  &trans  &trans  &trans
                                      &trans     &trans     &trans          &trans  &trans  &trans
                     >;
                 };
