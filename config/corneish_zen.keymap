@@ -66,7 +66,7 @@
                 label = "TAP_DANCE_0";
                 #binding-cells = <0>;
                 tapping-term-ms = <250>;
-                bindings = <&kp RSHIFT>, <&mo 8>;
+                bindings = <&kp RSHIFT>, <&mo 7>;
             };
         };
         combos {
@@ -90,7 +90,7 @@
             combo_rmouse {
                 timeout-ms = <50>;
                 key-positions = <18 22>;
-                bindings = <&mo 7>;
+                bindings = <&mo 6>;
                 slow-release;
             };
         };
@@ -166,7 +166,7 @@
                     >;
                 };
                 lctrlqwerty {
-                    label = "LCTRL";
+                    label = "CT";
                     bindings = <
          &trans  &trans   &trans     &kp LC(R)     &kp LC(T)     &kp LC(Y)          &trans  &trans  &trans  &trans  &trans  &trans
          &trans  &trans   &trans     &trans     &kp LC(F)     &trans          &trans  &trans  &trans  &trans  &trans  &trans
