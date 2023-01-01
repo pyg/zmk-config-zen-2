@@ -17,12 +17,12 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <300>;
+    time-to-max-speed-ms = <150>;
     acceleration-exponent=<1>;
 };
 
 &mwh {
-    time-to-max-speed-ms = <300>;
+    time-to-max-speed-ms = <150>;
     acceleration-exponent=<1>;
 };
 
@@ -78,6 +78,16 @@
                 key-positions = <22 23>;
                 bindings = <&kp QUESTION>;
             };
+            combo_space {
+                timeout-ms = <50>;
+                key-positions = <13 38>;
+                bindings = <&sk LSHIFT>;
+            };
+            combo_dqt {
+                timeout-ms = <50>;
+                key-positions = <21 22>;
+                bindings = <&kp DQT>;
+            };
             combo_esc {
                 timeout-ms = <50>;
                 key-positions = <0 1>;
@@ -124,9 +134,9 @@
                 symbol {
                     label = "SYMBOLS";
                     bindings = <
-         &trans  &lt 4 LT  &lt 5 LEFT_BRACKET   &kp RBKT    &kp GT      &kp CARET            &trans    &kp PLUS   &kp PERCENT   &kp QUESTION  &trans  &trans
+         &trans  &lt 4 LT  &lt 5 LEFT_BRACKET   &kp RBKT    &kp GT      &kp CARET            &trans    &kp PLUS   &kp EQUAL  &kp QUESTION  &trans  &trans
          &trans  &kp LBRC            &kp LPAR   &kp RPAR  &kp RBRC   &kp AMPERSAND            &trans      &kp SEMI     &kp COLON  &kp DQT  &trans  &trans
-         &trans  &kp EXCL              &kp AT  &kp POUND  &kp DLLR  &kp ASTERISK            &trans  &td0  &kp NUMBER_0   &trans  &trans  &trans
+         &trans  &kp EXCL              &kp AT  &kp POUND  &kp DLLR  &kp ASTERISK            &kp PERCENT  &td0  &kp NUMBER_0   &trans  &trans  &trans
                                                   &trans    &trans         &trans          &kp ENTER    &trans &trans
                     >;
                 };
@@ -170,7 +180,7 @@
                 lctrlqwerty {
                     label = "CT";
                     bindings = <
-         &trans  &trans   &trans     &kp LC(R)     &kp LC(T)     &kp LC(Y)          &trans  &trans  &trans  &trans  &trans  &trans
+         &trans  &trans   &kp LC(W)     &kp LC(R)     &kp LC(T)     &kp LC(Y)          &trans  &trans  &trans  &trans  &trans  &trans
          &trans  &trans   &trans     &trans     &kp LC(F)     &trans          &trans  &trans  &trans  &trans  &trans  &trans
          &trans  &kp LC(Z)   &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(B)          &trans  &trans  &trans  &trans  &trans  &trans
                                      &trans     &trans     &trans          &trans  &trans  &trans
