@@ -171,7 +171,7 @@
                 number {
                     label = "NUMBERS";
                     bindings = <
-         &trans  &kp DQT  &trans  &trans  &kp MINUS   &kp STAR           &kp DOLLAR  &kp N7  &kp N8    &kp N9    &kp N6  &trans
+         &trans  &kp DQT  &trans  &trans  &kp MINUS   &kp GT           &kp DOLLAR  &kp N7  &kp N8    &kp N9    &kp N6  &trans
          &trans   &kp AT  &trans  &trans  &kp SLASH  &kp CARET          &kp PERCENT  &kp N2  &kp N3    &kp N4  &lt 4 N5  &trans
          &trans   &trans  &trans  &trans     &trans     &trans             &kp AMPS  &kp N1  &kp N0  &kp PLUS    &trans  &trans
                                   &trans     &trans     &trans               &trans  &trans  &trans
