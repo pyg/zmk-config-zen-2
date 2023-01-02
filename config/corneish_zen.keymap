@@ -17,12 +17,12 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <150>;
+    time-to-max-speed-ms = <200>;
     acceleration-exponent=<1>;
 };
 
 &mwh {
-    time-to-max-speed-ms = <150>;
+    time-to-max-speed-ms = <200>;
     acceleration-exponent=<1>;
 };
 
@@ -82,11 +82,17 @@
                 timeout-ms = <50>;
                 key-positions = <13 38>;
                 bindings = <&sk LSHIFT>;
+                quick-release;
             };
             combo_dqt {
                 timeout-ms = <50>;
                 key-positions = <21 22>;
                 bindings = <&kp DQT>;
+            };
+            combo_col {
+                timeout-ms = <50>;
+                key-positions = <20 22>;
+                bindings = <&kp COLON>;
             };
             combo_esc {
                 timeout-ms = <50>;
