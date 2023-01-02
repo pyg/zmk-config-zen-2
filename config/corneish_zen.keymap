@@ -21,6 +21,10 @@
     acceleration-exponent=<1>;
 };
 
+&sk {
+    quick-release;
+};
+
 &mwh {
     time-to-max-speed-ms = <200>;
     acceleration-exponent=<1>;
@@ -82,7 +86,6 @@
                 timeout-ms = <50>;
                 key-positions = <13 38>;
                 bindings = <&sk LSHIFT>;
-                quick-release;
             };
             combo_dqt {
                 timeout-ms = <50>;
