@@ -1,10 +1,10 @@
 manifest:
   remotes:
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
+    - name: pyg
+      url-base: https://github.com/pyg
   projects:
     - name: zmk
-      remote: caksoylar
+      remote: pyg
       revision: caksoylar/zen-v2+mouse  # custom branch name
       import: app/west.yml
   self:
