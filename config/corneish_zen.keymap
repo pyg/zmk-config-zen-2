@@ -12,7 +12,7 @@
 
 &mt {
     tapping-term-ms = <110>;
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
     retro-tap;
 };
 
@@ -112,7 +112,7 @@
                     bindings = <
          &kp TAB        &lt 4 Q      &lt 5 W     &lt 1 E     &kp R            &kp T              &kp Y     &kp U    &kp I       &kp O       &kp P             &kp BSLH
          &kp LCTRL      &kp A        &kp S       &kp D       &kp F            &kp G              &kp H     &kp J    &kp K       &kp L       &lt_tp 2 SQT      &kp ENTER
-         &sk LSHFT      &kp Z        &kp X       &kp C       &kp V            &kp B              &kp N     &kp M    &kp COMMA   &kp DOT     &kp SLASH         &lt 3 RSHFT
+         &sk LSHFT      &mt LSHFT Z        &kp X       &kp C       &kp V            &kp B              &kp N     &kp M    &kp COMMA   &kp DOT     &kp SLASH         &lt 3 RSHFT
                                             &kp LALT  &kp LGUI  &mt_bl RSHFT SPACE               &mt_bl RSHFT EQUAL   &kp BSPC  &kp DEL                   
                     >;
                 };
@@ -158,8 +158,8 @@
                 number {
                     label = "NUMBERS";
                     bindings = <
-         &trans  &kp DQT  &trans  &trans  &kp MINUS   &kp GT           &kp DOLLAR  &kp N7  &kp N8    &kp N9    &kp N6  &trans
-         &trans   &kp AT  &trans  &trans  &kp SLASH  &kp CARET          &kp PERCENT  &kp N2  &kp N3    &kp N4  &lt 4 N5  &trans
+         &trans  &kp DQT  &trans  &kp DOT  &kp MINUS   &kp GT           &kp DOLLAR  &kp N7  &kp N8    &kp N9    &kp N6  &trans
+         &trans   &kp AT  &trans  &kp PERCENT  &kp SLASH  &kp CARET          &kp PERCENT  &kp N2  &kp N3    &kp N4  &lt 4 N5  &kp N6
          &trans   &trans  &trans  &trans     &trans     &trans             &kp AMPS  &kp N1  &kp N0  &kp PLUS    &trans  &trans
                                   &trans     &trans     &trans               &trans  &trans  &trans
                     >;
