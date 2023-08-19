@@ -111,7 +111,7 @@
                     label = "so go do";
                     bindings = <
          &kp TAB        &lt 4 Q      &lt 5 W     &lt 1 E     &kp R            &kp T              &kp Y     &kp U    &kp I       &kp O       &kp P             &kp BSLH
-         &kp KC_CAPS_LOCK      &kp A        &kp S       &kp D       &kp F            &kp G              &kp H     &kp J    &kp K       &kp L       &lt_tp 2 SQT      &kp ENTER
+         &kp CAPS      &kp A        &kp S       &kp D       &kp F            &kp G              &kp H     &kp J    &kp K       &kp L       &lt_tp 2 SQT      &kp ENTER
          &sk LSHFT      &mt LSHFT Z        &kp X       &kp C       &kp V            &kp B              &kp N     &kp M    &kp COMMA   &kp DOT     &kp SLASH         &lt 3 RSHFT
                                             &kp LALT  &kp LGUI  &mt_bl RSHFT SPACE               &mt_bl RSHFT EQUAL   &kp BSPC  &kp DEL                   
                     >;
